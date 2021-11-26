@@ -8,11 +8,23 @@ const header = document.querySelector("div#navLeft h1");
 const secondaryHeaders = document.querySelector("div#secondaryHeaders");
 const socials = document.querySelector("div#socials");
 const navLinks = document.querySelector("div#navLinks");
+const bioLink = document.getElementById("bioLink")
 const navList = document.querySelector("ul#navList");
 
 const skills = document.querySelector("div#skills");
 const projects = document.querySelector("div#projects");
 
+//doesnt fucking work lol
+// window.onload = (event) => {
+//     console.log('page loaded');
+//     window.scrollTo(0,0)
+// };
+
+function topFunction() {
+    console.log('top fn');
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
 
 function scrollFunction() {
     if (document.body.scrollTop > 100|| document.documentElement.scrollTop > 100) {
@@ -54,31 +66,6 @@ function scrollFunction() {
 
     }
 
-    if (document.body.scrollTop > 100 && document.body.scrollTop < 200) {
-        document.getElementById('skills').scrollIntoView({
-            behavior: 'smooth'
-          });
-    }
 }
 
-function doScrolling(elementY, duration) { 
-    var startingY = window.pageYOffset;
-    var diff = elementY - startingY;
-    var start;
-  
-    // Bootstrap our animation - it will get called right before next frame shall be rendered.
-    window.requestAnimationFrame(function step(timestamp) {
-      if (!start) start = timestamp;
-      // Elapsed milliseconds since start of scrolling.
-      var time = timestamp - start;
-      // Get percent of completion in range [0, 1].
-      var percent = Math.min(time / duration, 1);
-  
-      window.scrollTo(0, startingY + diff * percent);
-  
-      // Proceed with animation as long as we wanted it to.
-      if (time < duration) {
-        window.requestAnimationFrame(step);
-      }
-    })
-  }
+bioLink.addEventListener('click', topFunction);

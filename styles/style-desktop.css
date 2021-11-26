@@ -101,7 +101,6 @@ div#navLeft div#navLinks a#resLink:hover {
 
 div#socials {
     margin: auto;
-    display: flex;
 }
 
 div#socials a {
@@ -141,7 +140,8 @@ div#main {
 
 div.section {
     height: 100vh;
-    margin-top: 10vh;
+    display: flex;
+    /* margin-top: 10vh; */
 }
 
 /* div#bio {
@@ -150,43 +150,61 @@ div.section {
 } */
 
 div#skills {
-    background-color:olivedrab;
+    background-color: #70A0AF;
     margin-top: 30vh;
 }
-div#container {
+div.container {
     height: auto;
-    width: 80%;
+    width: 90%;
     margin: auto;
+    margin-top: auto;
 }
 
-div#skills div#techSkills, div#skills div#OtherSkills {
+div#skills div#techSkills {
     margin: auto;
     display: flex;
+    width: 95%;
+    flex-wrap: wrap;
+}
 
+div#skills div#otherSkills {
+    margin: auto;
+    display: flex;
+    width: 95%;
 }
 
 div#skills i.fas, div#skills i.fab {
     background: antiquewhite;
     color: #000;
-    font-size: 30px;
     border-radius: 50%;
+    font-size: 30px;
     padding: 30px;
-    margin: 2px;
+    margin: auto;
     width: 30px;
     height: 30px;
+    text-align: center;
 }
 
 div#skills div.skill {
     display: flex;
     margin: 20px;
+    width: 29%;
 }
 
-div#skills h4 {
-    margin: auto 15px;
+div#skills div.skill-icon {
+    align-content: center;
+}
+
+div#skills div.skill-caption {
+    width: 80%;
+}
+
+div#skills h3, div#skills h4 {
+    margin: 10px 15px;
 }
 
 div#projects {
-    background-color:gainsboro;
+    background-color:#A0C1B9;
     text-align: center;
     margin: 0 auto;
 }
