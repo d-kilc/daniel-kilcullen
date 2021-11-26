@@ -1,0 +1,192 @@
+/* global stuff */
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+a {
+    text-decoration: none;
+}
+/* --------------------------------- */
+
+/* sidebar menu for mobile */
+div#menu {
+    display: none;
+}
+
+button#menuToggle {
+    display: none;
+}
+/* --------------------------------- */
+
+/* left side of nav- headline, links, and socials */
+div#nav {
+    display: flex;
+    align-items: center;
+    background: white;
+    z-index: 99;
+    top: 0px;
+    width: 100vw;
+    height: 100vh;
+    transition: 1s;
+    overflow: hidden;
+}
+
+div#navLeft {
+    width: 30vw;
+    height: auto;
+    text-align: center;
+    margin: auto 15px;
+}
+
+div#navLeft img#avi {
+    height: 300px;
+    transition: height 1s;
+    border-radius: 50%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+div#navLeft h1 {
+    margin: auto;
+}
+
+div#secondaryHeaders {
+    margin: 10px;
+}
+
+div#navList {
+    height: 90%;
+}
+
+div#navLinks {
+    margin: 30px 15px;
+} 
+
+div#navLeft ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+div#navLeft li {
+    margin: 30px auto 30px auto;
+}
+
+div#navLeft div#navLinks a.navLink {
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    line-height: 1;
+    padding: 10px;
+    font-size: 16pt;
+}
+
+div#navLeft div#navLinks a#resLink {
+    /* transition: all .5s ease; */
+    background-color: #000;
+    color: #fff;
+    border: 3px solid black;
+    padding: 5px;
+    outline: none;
+    border-radius: 8px;
+}
+
+div#navLeft div#navLinks a#resLink:hover {
+    background-color: #fff;
+    color: #001F3F;
+    border: 3px solid black;
+    transition: 0.5s;
+    
+}
+
+div#socials {
+    margin: auto;
+    display: flex;
+}
+
+div#socials a {
+    background: antiquewhite;
+    color: #000;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 2px;
+    width: 20px;
+    height: 20px;
+}
+
+div#socials a.fa:hover {
+    opacity: 0.2;
+}
+/* --------------------------------- */
+
+
+/* right side of nav */
+div#navRight {
+    width: 70vw;
+    text-align: center;
+    margin: auto 15px;
+}
+
+div#navRight p {
+    width: 90%;
+    margin: auto;
+}
+/* --------------------------------- */
+
+/* main content section */
+div#main {
+    margin: 0;
+}
+
+div.section {
+    height: 100vh;
+    margin-top: 10vh;
+}
+
+/* div#bio {
+    background-color:seashell;
+    top: 100px;
+} */
+
+div#skills {
+    background-color:olivedrab;
+    margin-top: 30vh;
+}
+div#container {
+    height: auto;
+    width: 80%;
+    margin: auto;
+}
+
+div#skills div#techSkills, div#skills div#OtherSkills {
+    margin: auto;
+    display: flex;
+
+}
+
+div#skills i.fas, div#skills i.fab {
+    background: antiquewhite;
+    color: #000;
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 30px;
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+}
+
+div#skills div.skill {
+    display: flex;
+    margin: 20px;
+}
+
+div#skills h4 {
+    margin: auto 15px;
+}
+
+div#projects {
+    background-color:gainsboro;
+    text-align: center;
+    margin: 0 auto;
+}
