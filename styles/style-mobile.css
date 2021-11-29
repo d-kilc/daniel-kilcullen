@@ -94,9 +94,6 @@ div#menuList a {
     color: #000;
 }
 
-div#menuList div a {
-    /* color: darkgray; */
-}
 /* --------------------------------- */
 
 /* left side of nav- headline, links, and socials */
@@ -227,7 +224,7 @@ div#navRight {
 }
 
 div#navRight h1 {
-    font-size: 36pt;
+    font-size: 40pt;
 }
 
 div#navRight p {

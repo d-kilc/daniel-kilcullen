@@ -131,6 +131,10 @@ div#navRight {
     margin: auto 15px;
 }
 
+div#navRight h1 {
+    font-size: 28pt;
+}
+
 div#navRight p {
     width: 90%;
     margin: auto;
