@@ -1,5 +1,7 @@
 window.onscroll = function() {scrollFunction()};
 
+const menuBtn = document.querySelector("input#check");
+const menu = document.querySelector("div#menu");
 const avi = document.querySelector("div#nav div#navLeft img#avi");
 const nav = document.querySelector("div#nav");
 const navLeft = document.querySelector("div#navLeft");
@@ -21,10 +23,17 @@ const projects = document.querySelector("div#projects");
 // };
 
 function topFunction() {
-    console.log('top fn');
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-  }
+}
+
+function toggleMenu() {
+    if( menu.style.width === "0px" || menu.style.width === "") {
+        menu.style.width = "600px";
+    } else {
+        menu.style.width = "0px";
+    }
+}
 
 function scrollFunction() {
     if (window.screen.width >= 450) { //larger screens
@@ -158,3 +167,4 @@ function scrollFunction() {
 }
 
 bioLink.addEventListener('click', topFunction);
+menuBtn.addEventListener('click', toggleMenu);
