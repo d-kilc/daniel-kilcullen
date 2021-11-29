@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang='en'>
     <head>
-        <link rel="stylesheet" href="styles/style-mobile-menu.css"/>
-        <!-- <link rel="stylesheet" href="styles/style-desktop.css" media="(min-width: 1110px)"/>
-        <link rel="stylesheet" href="styles/style-medium.css" media="(max-width: 1109px)"/> -->
-        <link rel="stylesheet" href="styles/style-desktop.css"/>
+        <!-- <link rel="stylesheet" href="styles/style-mobile-menu.css"/> -->
+        <link rel="stylesheet" href="styles/style-desktop.css" media="screen and (min-device-width: 450px)"/>
+        <link rel="stylesheet" href="styles/style-mobile.css" media="screen and (max-device-width: 449px)"/>
+        <!-- <link rel="stylesheet" href="styles/style-desktop.css"/> -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,23 +16,26 @@
         <title>Daniel Kilcullen</title>
     </head>
     <body>
-        <div id="menu" class="sidebar">
-            <button id="menuToggle" onclick="toggleNav()">&#9776;</button>
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+        <!-- fix -->
+        <!-- <div id="menuButton" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
+        <div id="menu" class="sidebar">
+        </div> -->
         <div id="nav">
             <div id="navLeft">
                 
                 <img src="./images/dk-avi.jpeg" id="avi" alt="your company logo">
-                <h1>Daniel Kilcullen</h1>
-                <div id="secondaryHeaders">
-                    <h3>Full-stack developer</h3>
-                    <h3>Chicago, Illinois</h3>
+                <div id="headline">
+                    <h1>Daniel Kilcullen</h1>
+                    <div id="secondaryHeaders">
+                        <h3>Full-stack developer</h3>
+                        <h3>Chicago, Illinois</h3>
+                    </div>
                 </div>
+
                 <div id="navLinks">
                     <ul id="navList">
                         <li><a id="resLink" class="navLink" href="./assets/Daniel_Kilcullen_Resume.docx">Resume</a></li>
@@ -49,17 +52,18 @@
                 </div>
             </div>
             <div id="navRight">
-                <p>Hi, I'm Daniel, and I'm a full-stack developer based in Chicago, Illinois with experience in various client-facing roles, including technology consulting and software implementation. Thanks for visiting!</p>
+                <p>Hi, I'm Daniel, and I'm a full-stack developer based in Chicago, Illinois, with experience in various client-facing roles including technology consulting and software implementation. Thanks for visiting!</p>
                 <br/>
-                <p>Prior to beginning my professional life, I studied Information Systems and Operations Management at Indiana University's Kelley School of Business, where I also earned an M.S. in Information Systems in 2019. It was during this time that I was first exposed to software engineering in a formal capacity.</p>
+                <p>Prior to beginning my professional life, I studied Information Systems and Operations Management at Indiana University's Kelley School of Business, where I also earned an M.S. in Information Systems in 2019. It was around then that I was first exposed to software engineering in a formal capacity.</p>
                 <br/>
-                <p>As a technically-minded person, understanding the nuts and bolts of <i>how things work</i> at the most fundamental level is something that I've always gravitated towards. During my time as a consultant, I worked closely with developers on tasks like writing technical documentation and translating client needs into actionable specs, which inspired an even greater curiousity and desire to venture into the world of software development. After a few years of self-learning and exploration, I decided to make it my career.</p>
+                <p>As a technically-minded person, understanding the nuts and bolts of <i>how things work</i> at the most fundamental level is something that I've always gravitated towards. During my time as a consultant, I worked closely with developers on tasks like writing technical documentation and translating client needs into actionable specs, which inspired an even greater curiousity and desire to venture into the world of development. After a few years of self-learning and exploration, I decided to make it my career.</p>
                 <br/>
-                <p>In my leisure time, I love to travel, explore the outdoors, and subject myself to the pain that is being a New York Jets fan.</p>
+                <p>In my leisure, I love to travel, explore the outdoors, and subject myself to the pain that is being a New York Jets fan.</p>
             </div>
         </div>
         <div id="main">
             <!-- <div id="bio" class="section"></div> -->
+            <!-- icons not centered. fix -->
             <div id="skills" class="section">
                 <div class="container">
                     <h1>Technical</h1>
@@ -128,7 +132,7 @@
             </div>
             <div id="projects" class="section">
                 <div class="container">
-                    <h1>Projects section coming soon</h1>
+                    <h1>Coming soon</h1>
                 </div>
             </div>
         </div>

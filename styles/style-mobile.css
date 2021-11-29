@@ -9,18 +9,64 @@ a {
 /* --------------------------------- */
 
 /* sidebar menu for mobile */
-div#menu, button#menuButton {
+div#menu {
     display: none;
+
 }
 
-div#menuToggle {
-    display: none;
+/* menu button w/animation */
+div#menuButton {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: fixed;
+    color: black;
+    height: 100px;
+    width: 100px;
+    z-index: 100;
+    top: 52px;
+    right: 45px;
+    left: auto;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 33%;
+    height: 3%;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+
+button#menuButton {
+    position: fixed;
+    color: black;
+    height: 100px;
+    width: 100px;
+    z-index: 100;
+    top: 52px;
+    right: 45px;
+    left: auto;
 }
 /* --------------------------------- */
 
 /* left side of nav- headline, links, and socials */
 div#nav {
-    display: flex;
+    display: block;
     align-items: center;
     background: white;
     z-index: 99;
@@ -32,105 +78,124 @@ div#nav {
 }
 
 div#navLeft {
-    width: 30vw;
-    height: auto;
+    width: 90vw;
+    height: 30vh;
     text-align: center;
-    margin: auto 15px;
+    align-items: center;
+    margin: auto ;
+
+    display: flex;
+    transition: 1s;
 }
 
 div#navLeft img#avi {
-    height: 300px;
+    width: 40%;
     transition: height 1s;
     border-radius: 50%;
     margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+}
+
+div#navLeft div#headline {
+    margin: auto 30px;
+    font-size: 18pt;
+    text-align: left;
 }
 
 div#navLeft div#headline h1 {
-    margin: auto;
+    margin: 0 auto;
 }
 
 div#secondaryHeaders {
-    margin: 10px;
+    margin: auto;
 }
 
 div#navList {
-    height: 90%;
+    /* height: 90%; */
+
+    display: none;
 }
 
 div#navLinks {
-    margin: 30px 15px;
+    /* margin: 30px 15px; */
+    display: none;
 } 
 
 div#navLeft ul {
-    list-style-type: none;
-    padding-left: 0px;
+    /* list-style-type: none;
+    padding-left: 0px; */
 }
 
 div#navLeft li {
-    margin: 30px auto 30px auto;
+    /* margin: 30px auto 30px auto; */
 }
 
 div#navLeft div#navLinks a.navLink {
-    text-transform: uppercase;
+    /* text-transform: uppercase;
     text-align: center;
     color: #000;
     line-height: 1;
     padding: 10px;
-    font-size: 16pt;
+    font-size: 16pt; */
 }
 
 div#navLeft div#navLinks a#resLink {
     /* transition: all .5s ease; */
-    background-color: #000;
+    /* background-color: #000;
     color: #fff;
     border: 3px solid black;
     padding: 5px;
     outline: none;
-    border-radius: 8px;
+    border-radius: 8px; */
 }
 
 div#navLeft div#navLinks a#resLink:hover {
-    background-color: #fff;
+    /* background-color: #fff;
     color: #001F3F;
     border: 3px solid black;
-    transition: 0.5s;
+    transition: 0.5s; */
     
 }
 
 div#socials {
-    margin: auto;
+    /* margin: auto; */
+
+    display: none;
 }
 
 div#socials a {
-    background: antiquewhite;
+    /* background: antiquewhite;
     color: #000;
     font-size: 20px;
     border-radius: 50%;
     padding: 20px;
     margin: 2px;
     width: 20px;
-    height: 20px;
+    height: 20px; */
+
+    display: none;
 }
 
 div#socials a.fa:hover {
-    opacity: 0.2;
+    /* opacity: 0.2; */
 }
 /* --------------------------------- */
 
 
 /* right side of nav */
 div#navRight {
-    width: 70vw;
+    width: 90vw;
+    height: 70vh;
     text-align: center;
-    margin: auto 15px;
+    margin: auto;
+
 }
 
 div#navRight p {
     width: 90%;
     margin: auto;
-    font-size: 16pt;
+    font-size: 22pt;
 }
 /* --------------------------------- */
 
@@ -154,6 +219,7 @@ div#skills {
     background-color: #70A0AF;
     margin-top: 30vh;
 }
+
 div.container {
     height: auto;
     width: 90%;
@@ -161,7 +227,19 @@ div.container {
     margin-top: auto;
 }
 
-div#skills div#techSkills {
+div.container h1 {
+    font-size: 36pt;
+}
+
+div.container h3 {
+    font-size: 24pt;
+}
+
+div.container h4 {
+    font-size: 20pt;
+}
+
+div#skills div#techSkills, div#skills div#otherSkills {
     margin: auto;
     display: flex;
     width: 95%;
@@ -178,27 +256,18 @@ div#skills i.fas, div#skills i.fab {
     background: antiquewhite;
     color: #000;
     border-radius: 50%;
-    font-size: 30px;
-    padding: 30px;
-    margin: 2px;
-    width: 30px;
-    height: 30px;
-    /* text-align: center; */
-
-    /* background: antiquewhite;
-    color: #000;
-    font-size: 20px;
-    border-radius: 50%;
-    padding: 20px;
-    margin: 2px;
-    width: 20px;
-    height: 20px; */
+    font-size: 40px;
+    padding: 40px;
+    margin: auto;
+    width: 40px;
+    height: 40px;
+    text-align: center;
 }
 
 div#skills div.skill {
     display: flex;
     margin: 20px;
-    width: 29%;
+    width: 45%;
 }
 
 div#skills div.skill-icon {
@@ -207,6 +276,7 @@ div#skills div.skill-icon {
 
 div#skills div.skill-caption {
     width: 80%;
+    margin-left: 10px;
 }
 
 div#skills h3, div#skills h4 {
