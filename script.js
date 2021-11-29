@@ -2,6 +2,7 @@ window.onscroll = function() {scrollFunction()};
 
 const menuBtn = document.querySelector("input#check");
 const menu = document.querySelector("div#menu");
+const menuItems = document.querySelectorAll("div#menu div.menuItem");
 const avi = document.querySelector("div#nav div#navLeft img#avi");
 const nav = document.querySelector("div#nav");
 const navLeft = document.querySelector("div#navLeft");
@@ -168,3 +169,7 @@ function scrollFunction() {
 
 bioLink.addEventListener('click', topFunction);
 menuBtn.addEventListener('click', toggleMenu);
+
+for (let i = 0; i < menuItems.length; i++) {
+    menuItems[i].addEventListener('click',toggleMenu);
+}

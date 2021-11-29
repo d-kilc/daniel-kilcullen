@@ -87,6 +87,15 @@ div#menuList {
 
 div#menuList div {
     margin: 50px;
+    font-weight: bolder;
+}
+
+div#menuList a {
+    color: #000;
+}
+
+div#menuList div a {
+    /* color: darkgray; */
 }
 /* --------------------------------- */
 
@@ -215,7 +224,10 @@ div#navRight {
     height: 70vh;
     text-align: center;
     margin: auto;
+}
 
+div#navRight h1 {
+    font-size: 36pt;
 }
 
 div#navRight p {
