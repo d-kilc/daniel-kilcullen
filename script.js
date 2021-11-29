@@ -113,7 +113,7 @@ function scrollFunction() {
             navLeft.style.display = "flex";
             navLeft.style.justifyContent = "center";
             navLeft.style.width = "90vw";
-            navLeft.style.height = "30vh";
+            navLeft.style.height = "28vh";
             navRight.style.display = "block";
             navRight.style.height = "70vh"
             header.style.margin = "auto";

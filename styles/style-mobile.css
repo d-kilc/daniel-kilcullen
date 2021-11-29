@@ -92,6 +92,7 @@ div#menuList div {
 
 div#menuList a {
     color: #000;
+    text-decoration: none;
 }
 
 /* --------------------------------- */
@@ -111,7 +112,7 @@ div#nav {
 
 div#navLeft {
     width: 90vw;
-    height: 30vh;
+    height: 20vh;
     text-align: center;
     align-items: center;
     margin: auto ;
@@ -154,42 +155,6 @@ div#navLinks {
     display: none;
 } 
 
-div#navLeft ul {
-    /* list-style-type: none;
-    padding-left: 0px; */
-}
-
-div#navLeft li {
-    /* margin: 30px auto 30px auto; */
-}
-
-div#navLeft div#navLinks a.navLink {
-    /* text-transform: uppercase;
-    text-align: center;
-    color: #000;
-    line-height: 1;
-    padding: 10px;
-    font-size: 16pt; */
-}
-
-div#navLeft div#navLinks a#resLink {
-    /* transition: all .5s ease; */
-    /* background-color: #000;
-    color: #fff;
-    border: 3px solid black;
-    padding: 5px;
-    outline: none;
-    border-radius: 8px; */
-}
-
-div#navLeft div#navLinks a#resLink:hover {
-    /* background-color: #fff;
-    color: #001F3F;
-    border: 3px solid black;
-    transition: 0.5s; */
-    
-}
-
 div#socials {
     /* margin: auto; */
 
@@ -209,9 +174,6 @@ div#socials a {
     display: none;
 }
 
-div#socials a.fa:hover {
-    /* opacity: 0.2; */
-}
 /* --------------------------------- */
 
 
@@ -245,10 +207,6 @@ div.section {
     /* margin-top: 10vh; */
 }
 
-/* div#bio {
-    background-color:seashell;
-    top: 100px;
-} */
 
 div#skills {
     background-color: #70A0AF;
